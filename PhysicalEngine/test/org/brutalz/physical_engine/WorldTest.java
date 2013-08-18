@@ -35,7 +35,7 @@ public class WorldTest {
 
         world.step(2.8284271247); // time, when the shpere has no speed after collision with plane
 
-        assertEquals(0.0, sphere.getVelocity().getZ(), 0.0001);
-        assertEquals(10.0, sphere.getY(), 0.0001);
+        assertEquals(0.0, sphere.getVelocityZ(), 0.0001);
+        assertEquals(10.0, sphere.getZ(), 0.0001);
     }
 }
