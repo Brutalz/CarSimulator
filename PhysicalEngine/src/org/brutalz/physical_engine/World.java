@@ -19,17 +19,16 @@ public class World {
         for (Collider collider : colliders) {
             //TODO: check Vector3d operations and make physics for sphere jump.
             if (!collider.isStatic()) {
-                SphereCollider sphereCollider = (SphereCollider) collider;
-                Vector3d location = sphereCollider.getCenter();
-                Vector3d velocity = sphereCollider.getVelocity();
+                Vector3d location = collider.getCenter();
+                Vector3d velocity = collider.getVelocity();
 
                 location.add(velocity.multiply(deltaT).add(gravity.multiply(deltaT * deltaT / 2)));
 
                 velocity.add(gravity.multiply(deltaT));
 
-                sphereCollider.setVelocity(velocity);
+                collider.setVelocity(velocity);
 
-                sphereCollider.setCenter(location);
+                collider.setCenter(location);
             }
         }
     }

@@ -6,13 +6,13 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/WorldTest.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376844398176" ignored="false" />
     <file path="/fragment.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376853751031" ignored="false" />
-    <file path="/World.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376844359007" ignored="false" />
-    <file path="/SphereCollider.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376843595783" ignored="false" />
+    <file path="/World.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376857131116" ignored="false" />
+    <file path="/SphereCollider.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376857070315" ignored="false" />
     <file path="/PlaneCollider.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376823606166" ignored="false" />
     <file path="/Vector3d.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376853738999" ignored="false" />
-    <file path="/Collider.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376847685076" ignored="false" />
+    <file path="/Collider.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376857031626" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376853900420" ignored="false" />
-    <file path="/Vector3dTest.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376853786273" ignored="false" />
+    <file path="/Vector3dTest.java" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376857407567" ignored="false" />
     <file path="/Dummy.txt" changelist="1920cb99-05bc-44da-96a0-8bdd85a3da2d" time="1376853751031" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,21 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vector3dTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3dTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SphereCollider.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/SphereCollider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="6" column="29" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,25 +95,34 @@
       <file leaf-file-name="Vector3d.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Vector3d.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+            <state line="6" column="21" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="World.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Vector3dTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3dTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="47" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="847" selection-end="847" vertical-scroll-proportion="0.68653846">
+            <state line="27" column="52" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Collider.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Collider.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Collider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,10 +141,10 @@
         <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/PlaneCollider.java" />
         <option value="$PROJECT_DIR$/test/org/brutalz/physical_engine/WorldTest.java" />
         <option value="$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3d.java" />
-        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/Collider.java" />
-        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/World.java" />
-        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/SphereCollider.java" />
         <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/Vector3d.java" />
+        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/Collider.java" />
+        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/SphereCollider.java" />
+        <option value="$PROJECT_DIR$/src/org/brutalz/physical_engine/World.java" />
         <option value="$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3dTest.java" />
       </list>
     </option>
@@ -154,8 +152,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="916" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -213,7 +211,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,6 +267,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,14 +282,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="C:\Users\user\Desktop\CarSimulator\PhysicalEngine\lib" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Downloaded.Files.Path" value="C:\Users\user\Desktop\CarSimulator\PhysicalEngine\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -423,6 +421,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -448,19 +459,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -565,8 +563,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -581,8 +579,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.71929824" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892396" sideWeight="0.71936756" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2806324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848485" sideWeight="0.72089314" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27910686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -723,23 +721,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Collider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/SphereCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+        <state line="6" column="29" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Vector3d.java">
+    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="27" column="52" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -751,18 +742,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3dTest.java">
+    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Vector3d.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="6" column="21" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/World.java">
+    <entry file="file://$PROJECT_DIR$/test/org/brutalz/physical_engine/Vector3dTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="847" selection-end="847" vertical-scroll-proportion="0.68653846">
+        <state line="32" column="47" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/brutalz/physical_engine/Collider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

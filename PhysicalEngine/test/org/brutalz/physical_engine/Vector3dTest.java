@@ -20,4 +20,16 @@ public class Vector3dTest {
         vector.multiply(alpha);
         assertTrue(new Vector3d(0.0, -5.0, 10.0).equals(vector));
     }
+
+    @Test
+    public void testVectorLinearCombination() {
+        Vector3d vector1 = new Vector3d(1.0, -1.0, 3.0);
+        Vector3d vector2 = new Vector3d(-5.0, 21.0, 7.0);
+        double alpha1 = 4.0;
+        double alpha2 = -3.0;
+        vector1.multiply(alpha1);
+        vector2.multiply(alpha2);
+        vector1.add(vector2);
+        assertTrue(new Vector3d(19.0, -67.0, -9.0).equals(vector1));
+    }
 }
