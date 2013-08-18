@@ -1,13 +1,11 @@
 package org.brutalz.physical_engine;
 
-public class PlaneCollider {
-    private boolean isStatic;
+public class PlaneCollider extends Collider {
+    private Vector3d normalVector;
+    private double planeConstant;
 
     public PlaneCollider(double a, double b, double c, double d) {
-
-    }
-
-    public void setStatic(boolean isStatic) {
-        this.isStatic = isStatic;
+        normalVector = new Vector3d(a, b, c);
+        planeConstant = d;
     }
 }

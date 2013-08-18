@@ -4,51 +4,35 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class World {
-    private double gravityX = 0.0;
-    private double gravityY = 0.0;
-    private double gravityZ = 0.0;
-    private List<SphereCollider> colliders = new LinkedList<SphereCollider>();
+    private Vector3d gravity;
+    private List<Collider> colliders = new LinkedList<Collider>();
 
     public void setGravity(double x, double y, double z) {
-        gravityX = x;
-        gravityY = y;
-        gravityZ = z;
+        gravity = new Vector3d(x, y, z);
     }
 
-    public void addCollider(SphereCollider sphere) {
-        colliders.add(sphere);
-    }
-
-    public void addCollider(PlaneCollider earth) {
-        throw new UnsupportedOperationException();
+    public void addCollider(Collider collider) {
+        colliders.add(collider);
     }
 
     public void step(double deltaT) {
-        for (SphereCollider collider : colliders) {
-            //TODO: make location, velocity as Vector3d property of colliders
-            double x = collider.getX();
-            double y = collider.getY();
-            double z = collider.getZ();
+        for (Collider collider : colliders) {
+            //TODO: check Vector3d operations and make physics for sphere jump.
+            if (!collider.getStatic()) {
 
-            double vx = collider.getVelocityX();
-            double vy = collider.getVelocityY();
-            double vz = collider.getVelocityZ();
+            SphereCollider sphereCollider = (SphereCollider) collider;
+            Vector3d location = sphereCollider.getCenter();
+            Vector3d velocity = sphereCollider.getVelocity();
 
-            x += vx * deltaT + gravityX * deltaT * deltaT / 2;
-            y += vy * deltaT + gravityY * deltaT * deltaT / 2;
-            z += vz * deltaT + gravityZ * deltaT * deltaT / 2;
+            location.add(velocity.mult(deltaT).add(gravity.mult(deltaT * deltaT / 2)));
 
-            vx += gravityX * deltaT;
-            vy += gravityY * deltaT;
-            vz += gravityZ * deltaT;
+            velocity.add(gravity.mult(deltaT));
 
-            collider.setVelocityX(vx);
-            collider.setVelocityY(vy);
-            collider.setVelocityZ(vz);
+            sphereCollider.setVelocity(velocity);
 
-            collider.setX(x);
-            collider.setY(y);
-            collider.setZ(z);
+            sphereCollider.setCenter(location);
+
+            }
         }
     }
 }

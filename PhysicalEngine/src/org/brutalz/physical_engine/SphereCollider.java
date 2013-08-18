@@ -1,72 +1,42 @@
 package org.brutalz.physical_engine;
 
-public class SphereCollider {
-    private double x;
-    private double y;
-    private double z;
+public class SphereCollider extends Collider {
+    private Vector3d center;
     private double r;
-    private boolean isStatic;
-    private double velocityX;
-    private double velocityY;
-    private double velocityZ;
+    private Vector3d velocity;
 
     public SphereCollider(double x, double y, double z, double r) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        this.center = new Vector3d(x, y, z);
         this.r = r;
+        this.velocity = new Vector3d(0.0, 0.0, 0.0);
     }
 
-    public double getX() {
-        return x;
+    public Vector3d getCenter() {
+        return center;
     }
 
-    public void setX(double x) {
-
-        this.x = x;
+    public void setCenter(double x, double y, double z) {
+        center.set(x ,y ,z);
     }
 
-    public double getY() {
-        return y;
+    public void setCenter(Vector3d center) {
+        setCenter(center.getX(), center.getY(), center.getZ());
     }
 
-    public void setY(double y) {
-        this.y = y;
-    }
-
-    public double getZ() {
-        return z;
-    }
-
-    public void setZ(double z) {
-        this.z = z;
-    }
 
     public double getR() {
         return r;
     }
 
-    public double getVelocityX() {
-        return velocityX;
+    public Vector3d getVelocity() {
+        return velocity;
     }
 
-    public void setVelocityX(double velocityX) {
-        this.velocityX = velocityX;
+    public void setVelocity(double x, double y, double z) {
+        velocity.set(x, y, z);
     }
 
-    public double getVelocityY() {
-        return velocityY;
-    }
-
-    public void setVelocityY(double velocityY) {
-        this.velocityY = velocityY;
-    }
-
-    public double getVelocityZ() {
-        return velocityZ;
-    }
-
-    public void setVelocityZ(double velocityZ) {
-        this.velocityZ = velocityZ;
+    public void setVelocity(Vector3d velocity) {
+        setVelocity(velocity.getX(), velocity.getY(), velocity.getZ());
     }
 }
