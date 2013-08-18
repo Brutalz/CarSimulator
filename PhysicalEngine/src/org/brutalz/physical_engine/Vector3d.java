@@ -6,9 +6,7 @@ public class Vector3d {
     private double z;
 
     public Vector3d(double x, double y, double z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        set(x, y, z);
     }
 
     public double getX() {
@@ -29,30 +27,51 @@ public class Vector3d {
         this.z = z;
     }
 
-    public void setX(double x) {
-        set(x, y, z);
-    }
-
-    public void setY(double y) {
-        set(x, y, z);
-    }
-
-    public void setZ(double z) {
-        set(x, y, z);
-    }
-
     public Vector3d add(Vector3d vector) {
-        this.x += vector.getX();
-        this.y += vector.getY();
-        this.z += vector.getZ();
+        this.x += vector.x;
+        this.y += vector.y;
+        this.z += vector.z;
         return this;
     }
 
-    public Vector3d mult(double alpha) {
+    public Vector3d multiply(double alpha) {
         this.x *= alpha;
         this.y *= alpha;
         this.z *= alpha;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Vector3d vector3d = (Vector3d) o;
+
+        if (x == vector3d.x &&
+                y == vector3d.y &&
+                z == vector3d.z) {
+            return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(x);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(y);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(z);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    public double dot() {
+        return x*x + y*y + z*z;
     }
 }
 

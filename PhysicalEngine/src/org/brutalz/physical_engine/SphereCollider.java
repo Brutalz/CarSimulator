@@ -16,13 +16,12 @@ public class SphereCollider extends Collider {
     }
 
     public void setCenter(double x, double y, double z) {
-        center.set(x ,y ,z);
+        center.set(x, y, z);
     }
 
     public void setCenter(Vector3d center) {
         setCenter(center.getX(), center.getY(), center.getZ());
     }
-
 
     public double getR() {
         return r;

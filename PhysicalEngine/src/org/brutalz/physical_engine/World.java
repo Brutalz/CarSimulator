@@ -18,20 +18,18 @@ public class World {
     public void step(double deltaT) {
         for (Collider collider : colliders) {
             //TODO: check Vector3d operations and make physics for sphere jump.
-            if (!collider.getStatic()) {
+            if (!collider.isStatic()) {
+                SphereCollider sphereCollider = (SphereCollider) collider;
+                Vector3d location = sphereCollider.getCenter();
+                Vector3d velocity = sphereCollider.getVelocity();
 
-            SphereCollider sphereCollider = (SphereCollider) collider;
-            Vector3d location = sphereCollider.getCenter();
-            Vector3d velocity = sphereCollider.getVelocity();
+                location.add(velocity.multiply(deltaT).add(gravity.multiply(deltaT * deltaT / 2)));
 
-            location.add(velocity.mult(deltaT).add(gravity.mult(deltaT * deltaT / 2)));
+                velocity.add(gravity.multiply(deltaT));
 
-            velocity.add(gravity.mult(deltaT));
+                sphereCollider.setVelocity(velocity);
 
-            sphereCollider.setVelocity(velocity);
-
-            sphereCollider.setCenter(location);
-
+                sphereCollider.setCenter(location);
             }
         }
     }
