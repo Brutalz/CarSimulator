@@ -28,17 +28,15 @@ public class Vector3d {
     }
 
     public Vector3d add(Vector3d vector) {
-        this.x += vector.x;
-        this.y += vector.y;
-        this.z += vector.z;
-        return this;
+        return new Vector3d(this.x + vector.x,
+                this.y + vector.y,
+                this.z + vector.z);
     }
 
     public Vector3d multiply(double alpha) {
-        this.x *= alpha;
-        this.y *= alpha;
-        this.z *= alpha;
-        return this;
+        return new Vector3d(alpha * this.x,
+                alpha * this.y,
+                alpha * this.z);
     }
 
     @Override
@@ -68,6 +66,11 @@ public class Vector3d {
         temp = Double.doubleToLongBits(z);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("(%f, %f, %f)", x, y, z);
     }
 
     public double dot() {

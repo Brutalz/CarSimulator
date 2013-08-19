@@ -22,12 +22,10 @@ public class World {
                 Vector3d location = collider.getCenter();
                 Vector3d velocity = collider.getVelocity();
 
-                location.add(velocity.multiply(deltaT).add(gravity.multiply(deltaT * deltaT / 2)));
-
-                velocity.add(gravity.multiply(deltaT));
+                location = location.add(velocity.multiply(deltaT).add(gravity.multiply(deltaT * deltaT / 2)));
+                velocity = velocity.add(gravity.multiply(deltaT));
 
                 collider.setVelocity(velocity);
-
                 collider.setCenter(location);
             }
         }
